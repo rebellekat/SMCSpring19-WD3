@@ -1,15 +1,16 @@
-.container {
-    background-color: dodgerblue;
-}
 
+.container {
+    background-color: black;
+}
 .row {
-    background-color: cornsilk;
+    background-color: white;
 }
 
 [class^="col-"]:first-child {
-    background-color: aquamarine;
+    background-color: red;
 }
 
 [class^="col-"]:last-child {
-    background-color: salmon;
+    background-color: blue;
 }
+

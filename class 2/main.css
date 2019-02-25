@@ -14,3 +14,13 @@
     background-color: blue;
 }
 
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-color: black;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.btn {background-color:blue;}

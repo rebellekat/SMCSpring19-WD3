@@ -2,9 +2,7 @@
 .container {
     background-color: black;
 }
-.row {
-    background-color: white;
-}
+
 
 [class^="col-"]:first-child {
     background-color: red;

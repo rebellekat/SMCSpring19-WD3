@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    	 <title>class 5</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+
+  <body>
+  	<div>
+		<p id="text1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		<button id="button1">Color Me!</button>
+		<button id="button2">Hide Me!</button>
+	</div>
+	<div>
+		<p id="text2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button id="button2_1">Color Me!</button>
+		<button id="button2_2">Hide Me!</button>
+	</div>
+<script> 
+
+	var colorButton = document.getElementById("button1");
+	var displaybutton = document.getElementById("button2");
+
+	var changeColor = function(){
+		var text = document.getElementById('text1');
+		var redVal = Math.random()*255;
+		var greenVal = Math.random()*255;
+		var blueVal = Math.random()*255;
+
+		console.log(greenVal);
+
+			text.style.backgroundColor = "rgb("+redVal+", "+greenVal+", "+blueVal+")";
+		}
+
+	var hideText = function()(
+	var text = document.getElementById("text1");
+	text.style.display = "none";
+	)
+
+	colorButton.addEventListener("click", changeColor);
+	displaybutton.addEventListener("click", hidetext);
+
+
+</script>
+
+</body>
+</html>

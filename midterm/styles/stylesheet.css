@@ -5,12 +5,9 @@ body{
 }
 h1{
 	color: #ffffff;
-	 font-size: 3.5em; /*50/16=3.125em*/
+	
 	 text-align: center; 
 }
-
-
-
 
 
 /**company name in nav bar**/
@@ -51,15 +48,16 @@ h5{
 }
 
 /**carousel**/
+
+
 .carousel img {
-    max-height: 800px;
+    max-height: 750px;
 }
 
 .carousel-item {
 	align-content: center;
 }
 .carousel-item {
-
   min-height: 550px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -74,3 +72,4 @@ h5{
 .colororange{
 	color:#FF8C00;
 }
+

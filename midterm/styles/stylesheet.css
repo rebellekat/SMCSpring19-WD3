@@ -1,21 +1,15 @@
-
-
 body{
 	background-color: #FF8C00; 
 }
 h1{
 	color: #ffffff;
-	
 	 text-align: center; 
 }
-
 
 /**company name in nav bar**/
 h5{
 	color: #666699;
 }
-
-
 
 /**navbar**/
 .navbar {
@@ -34,7 +28,6 @@ h5{
 	  text-decoration: overline dotted #FF8C00;
 }
 
-
 /**end of navbar**/
 .container {
     background-color: #000000;
@@ -46,17 +39,7 @@ h5{
 .row {
     background-color:#FF8C00;
 }
-
 /**carousel**/
-
-
-.carousel img {
- 
-}
-
-.carousel-item {
-	align-content: center;
-}
 .carousel-item {
   min-height: 550px;
   background: no-repeat center center scroll;
@@ -65,7 +48,6 @@ h5{
   -o-background-size: cover;
   background-size: cover;
 }
-
 .colorpurple{
 	background-color: #666699;
 }

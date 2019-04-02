@@ -52,7 +52,8 @@ h5{
 .colororange{
 	color:#FF8C00;
 }
-	.rotate-scale-up{
+
+.rotate-scale-up{
 	      animation: rotate-scale-up linear 1s both;
 			animation-delay:.2s;
 	-moz-animation: rotate-scale-up linear 1s both;
@@ -73,11 +74,11 @@ h5{
 	     -o-transform: scale(1) rotate(0);
   }
   50% {
-	  transform: scale(2) rotate(180deg);
-    -moz-transform: scale(2) rotate(180deg);
-    -o-transform: scale(1.25) rotate(180deg);
-	-webkit-transform: scale(2) rotate(180deg);
-	-ms-transform: scale(2) rotate(180deg);
+	  transform: scale(1.5) rotate(180deg);
+    -moz-transform: scale(1.5) rotate(180deg);
+    -o-transform: scale(1.5) rotate(180deg);
+	-webkit-transform: scale(1.5) rotate(180deg);
+	-ms-transform: scale(1.5) rotate(180deg);
 	
   }
   100% {
@@ -87,4 +88,3 @@ h5{
 	   -webkit-transform: scale(1) rotate(360deg);
 	   -ms-transform: scale(1) rotate(360deg);
   }
-}

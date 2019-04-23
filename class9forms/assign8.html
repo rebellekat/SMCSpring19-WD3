@@ -26,21 +26,45 @@
               <div class="form-group">
     <label for="dairypref">Please choose dairy or regular</label>
     <select class="form-control" id="dairypref" name="dairypref">
+          <option></option>
       <option value="nondairy">Dairy-Free Pints</option>
       <option value="regular">Icecream Pints</option>
     </select>
   </div>
             <div class="form-group">
     <label for="regularflavor">Select the flavor</label>
-    <select class="form-control" id="regularflavor" name="regularflavor" disabled>
-      <option></option>
+    <select class="form-control" id="regularflavor" name="regularflavor">
+         <option></option>
+      <option value="Marshmallow Peanut Butter">Marshmallow Peanut Butter</option>
+        <option value="French Toast">French Toast</option>
+          <option value="Salted Caramel">Salted Caramel</option>
+            <option value="Red Velvet">Red Velvet</option>
+             <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+        <option value="Cookies & Cream">Cookies & Cream</option>
+          <option value="Cinnamon Bun">Cinnamon Bun</option>
+            <option value="Monkey Business">Monkey Business</option>
     </select>
   </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" data-dismiss="alert">Submit</button>
           </form>
 </div>
 </div>
+<!--end of form selection-->
+
+<!--alert message-->
+    <div class="row">
+        <div class="col">
+          <div class="alert alert-warning alert-dismissable fade show" role="alert">
+                Great choice!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+         </div>
+       </div>
+         <!--end of alert message-->
 </div>
+<!--end of container-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -76,6 +100,9 @@ $("#dairypref").change(function(){
     $('#nondairyflavor').html(innerContent);
             };
         })
+
+$('.alert').alert('close')
+
   </script>
   <!--end of javascript-->
 

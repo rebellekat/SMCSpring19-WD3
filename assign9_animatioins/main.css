@@ -36,13 +36,8 @@ body {
         -o-transition: transform 2s;
         -webkit-transition: transform 2s;
 }
-h1{transition:transform 2s;
-        -moz-transition: transform 2s;
-        -ms-transition: transform 2s;
-        -o-transition: transform 2s;
-        -webkit-transition: transform 2s;
-}
-h1:hover{
+
+.display-3:hover{
     transform: scale(1.5);
         -moz-transform: scale(1.5);
         -ms-transform: scale(1.5);
@@ -85,23 +80,20 @@ h1:hover{
 }
 /*end of fade in cat image*/
 
+.moveImage{
+  -webkit-animation: mymove s infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation: mymove 40s infinite;
+  animation-timing-function: 40linear;
+}
 
-@keyframes motion1{
-    0%{
-        background-color: blue;
-        top: 5px;
-        left: 10px;
-    }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 900px;}
+}
 
-    25% {
-        background-color: red;
-        top: 300px;
-        left: 150px;
-    }
-
-    100% {
-        background-color: indigo;
-        top: 100px;
-        left: 500px;
-    }
-} 
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 900px;}
+}}

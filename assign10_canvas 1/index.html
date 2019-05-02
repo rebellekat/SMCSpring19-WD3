@@ -17,21 +17,21 @@
    <div id="container">
   	 <div id="row">
    		<div id="col">
-   			 <canvas id="myCanvas" width="500" height="300">
+   			 <canvas id="myCanvas" width="750" height="300">
        		 This is supposed to be an interactive Canvas. Please use a newer browser!
    			 </canvas>
    		</div>
    		<div id="col">
-   			<p class="text-light">Image to use:</p>
+   			<p class="text-light">Paint a piece of this artwork...</p>
 <img id="myart" src="myart.jpg" alt="My Artwork" width="366" height="367">
 
-	<p class="text-light">Canvas to fill:</p>
+	<p class="text-light">on the canvas below:</p>
 		<canvas id="myartCanvas" width="366" height="367"
 			style="border:1px solid #d3d3d3;">
 			Your browser does not support the HTML5 canvas tag.
 		</canvas>
 	
-			<p><button onclick="myartCanvas()">Try it</button></p>
+			<p><button onclick="myartCanvas()">Let's start painting!</button></p>
    		</div>
    	</div>
    </div>
@@ -54,7 +54,7 @@
 
 	    context.font = "24px Helvetica";
 	    context.textAlign = "center";
-	    context.fillText("This is my text", canvas.width/2, canvas.height/2);
+	    context.fillText("Paint your own canvas!", canvas.width/2, canvas.height/2);
 
 	    function myartCanvas() {
 	  var c = document.getElementById("myartCanvas");

@@ -4,18 +4,21 @@
 <title>Checkout</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Sublime project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/checkout.css">
 <link rel="stylesheet" type="text/css" href="styles/checkout_responsive.css">
+
+<!--my style sheet-->
+<link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+
 </head>
 <body>
 
 <div class="super_container">
 
-	<!-- Header -->
+<!-- Header -->
 
 	<header class="header">
 		<div class="header_container">
@@ -23,31 +26,20 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><a href="#">Sublime.</a></div>
+							<div class="logo"><a href="#">MadDog Sails</a></div>
 							<nav class="main_nav">
 								<ul>
-									<li class="hassubs active">
+									<li>
 										<a href="index.html">Home</a>
-										<ul>
-											<li><a href="categories.html">Categories</a></li>
-											<li><a href="education.html">Education</a></li>
-											<li><a href="cart.html">Cart</a></li>
-											<li><a href="checkout.html">Check out</a></li>
-											<li><a href="contact.html">Contact</a></li>
-										</ul>
-									</li>
 									<li class="hassubs">
-										<a href="categories.html">Categories</a>
+										<a href="offshore.html">Categories</a>
 										<ul>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
+											<li><a href="offshore.html">Offshore</a></li>
+											<li><a href="threedi.html">3Di Sails</a></li>
+											<li><a href="racing.html">Racing</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Offers</a></li>
+									<li><a href="blog.html">Blog</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</nav>
@@ -64,7 +56,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-										<div>Cart <span>(0)</span></div>
+										<div>Cart<span>(0)</span></div>
 									</a>
 								</div>
 								<div class="search">
@@ -122,7 +114,7 @@
 		</div>
 	</header>
 
-	<!-- Menu -->
+		<!-- Menu -->
 
 	<div class="menu menu_mm trans_300">
 		<div class="menu_container menu_mm">
@@ -138,24 +130,18 @@
 						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
 							<li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="product.html">Product<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="cart.html">Cart<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="checkout.html">Checkout<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
 						</ul>
 					</li>
 					<li class="page_menu_item has-children menu_mm">
-						<a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
+						<a href="offshore.html">Categories<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
+											<li><a href="offshore.html">Offshore</a></li>
+											<li><a href="threedi.html">3Di Sails</a></li>
+											<li><a href="npcradian.html">Racing</a></li>
 						</ul>
 					</li>
-					<li class="page_menu_item menu_mm"><a href="index.html">Accessories<i class="fa fa-angle-down"></i></a></li>
-					<li class="page_menu_item menu_mm"><a href="#">Offers<i class="fa fa-angle-down"></i></a></li>
-					<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -232,10 +218,10 @@
 									<label for="checkout_country">Country*</label>
 									<select name="checkout_country" id="checkout_country" class="dropdown_item_select checkout_input" require="required">
 										<option></option>
-										<option>Lithuania</option>
-										<option>Sweden</option>
-										<option>UK</option>
-										<option>Italy</option>
+										<option>United States</option>
+										<option>Canada</option>
+										<option>Brazil</option>
+										<option>New Zeeland</option>
 									</select>
 								</div>
 								<div>
@@ -250,25 +236,25 @@
 									<input type="text" id="checkout_zipcode" class="checkout_input" required="required">
 								</div>
 								<div>
-									<!-- City / Town -->
-									<label for="checkout_city">City/Town*</label>
+									<!-- City-->
+									<label for="checkout_city">City*</label>
 									<select name="checkout_city" id="checkout_city" class="dropdown_item_select checkout_input" require="required">
 										<option></option>
-										<option>City</option>
-										<option>City</option>
-										<option>City</option>
-										<option>City</option>
+										<option>Los Angeles</option>
+										<option>Los Angeles</option>
+										<option>Los Angeles</option>
+										<option>Los Angeles</option>
 									</select>
 								</div>
 								<div>
-									<!-- Province -->
-									<label for="checkout_province">Province*</label>
+									<!-- State -->
+									<label for="checkout_province">State*</label>
 									<select name="checkout_province" id="checkout_province" class="dropdown_item_select checkout_input" require="required">
 										<option></option>
-										<option>Province</option>
-										<option>Province</option>
-										<option>Province</option>
-										<option>Province</option>
+										<option>California</option>
+										<option>California</option>
+										<option>California</option>
+										<option>California</option>
 									</select>
 								</div>
 								<div>
@@ -318,12 +304,12 @@
 							</div>
 							<ul class="order_list">
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<div class="order_list_title">Cocktail Yellow dress</div>
-									<div class="order_list_value ml-auto">$59.90</div>
+									<div class="order_list_title">NPL Sport Main Sail</div>
+									<div class="order_list_value ml-auto">$5,285</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="order_list_title">Subtotal</div>
-									<div class="order_list_value ml-auto">$59.90</div>
+									<div class="order_list_value ml-auto">$5,285</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="order_list_title">Shipping</div>
@@ -331,7 +317,7 @@
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="order_list_title">Total</div>
-									<div class="order_list_value ml-auto">$59.90</div>
+									<div class="order_list_value ml-auto">$5,285</div>
 								</li>
 							</ul>
 						</div>
@@ -343,15 +329,11 @@
 									<input type="radio" name="radio">
 									<span class="checkmark"></span>
 								</label>
-								<label class="payment_option clearfix">Cach on delivery
-									<input type="radio" name="radio">
-									<span class="checkmark"></span>
-								</label>
 								<label class="payment_option clearfix">Credit card
 									<input type="radio" name="radio">
 									<span class="checkmark"></span>
 								</label>
-								<label class="payment_option clearfix">Direct bank transfer
+								<label class="payment_option clearfix">MadDog Black Card
 									<input type="radio" checked="checked" name="radio">
 									<span class="checkmark"></span>
 								</label>

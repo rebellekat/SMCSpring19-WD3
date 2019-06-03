@@ -6,12 +6,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
  
-  <!-- Bootstrap core CSS -->
-  <link href="styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap core CSS -->
+  <link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Styles for Blog -->
+ <!-- Styles for Blog -->
   <link href="styles/blog-home.css" rel="stylesheet">
 
+
+<!--Sublime styles-->
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -38,26 +40,27 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><a href="#">MadDog Sails</a></div>
+							<div class="logo"><a href="index.html">MadDog Sails</a></div>
 							<nav class="main_nav">
 								<ul>
 									<li>
 										<a href="index.html">Home</a>
 									<li class="hassubs">
-										<a href="categories.html">Categories</a>
+										<a href="#">Categories</a>
 										<ul>
 											<li><a href="offshore.html">Offshore</a></li>
 											<li><a href="threedi.html">3Di Sails</a></li>
 											<li><a href="racing.html">Racing</a></li>
 										</ul>
 									</li>
-									<li><a href="blog.html">Blog</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="sailcare.html">F.A.Q.</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="cart.html">
+									<a href="checkout.html">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -68,7 +71,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-										<div>Cart <span>(0)</span></div>
+										<div>Cart<span>(0)</span></div>
 									</a>
 								</div>
 								<div class="search">
@@ -128,7 +131,7 @@
 
 		<!-- Menu -->
 
-	<div class="menu menu_mm trans_300">
+	<div class="menu menu_mm trans_300 myMenu">
 		<div class="menu_container menu_mm">
 			<div class="page_menu_content">
 							
@@ -137,23 +140,20 @@
 						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
 					</form>
 				</div>
-				<ul class="page_menu_nav menu_mm">
-					<li class="page_menu_item has-children menu_mm">
-						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-					</li>
-					<li class="page_menu_item has-children menu_mm">
-						<a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-											<li><a href="offshore.html">Offshore</a></li>
-											<li><a href="threedi.html">3Di Sails</a></li>
-											<li><a href="racing.html">Racing</a></li>
-						</ul>
-					</li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Contact</a></li>
+				<ul class="page_menu_item menu_mm">
+						<li class="page_menu_item menu_mm">
+							<a href="index.html">Home</a></li>
+						<li class="page_menu_item has-children menu_mm">
+							<a href="#">Categories<i class="fa fa-angle-down"></i></a>
+								<ul class="page_menu_selection menu_mm">
+											<li class="page_menu_item has-children menu_mm"><a href="offshore.html">Offshore</a></li>
+											<li class="page_menu_item has-children menu_mm"><a href="threedi.html">3Di Sails</a></li>
+											<li class="page_menu_item has-children menu_mm"><a href="npcradian.html">Racing</a></li>
+								</ul>
+						</li>
+							<li class="page_menu_item menu_mm"><a href="#">Blog</a></li>
+							<li class="page_menu_item menu_mm"><a href="sailcare.html">F.A.Q.</a></li>
+							<li class="page_menu_item menu_mm"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -170,8 +170,31 @@
 		</div>
 	</div>
 
+	<!-- Home -->
+
+	<div class="home mb-3" id="blogUp">
+		<div class="home_container">
+			<div class="home_background" id="blogSmaller" style="background-image:url(img/transpac_edited.jpg)"></div>
+			<div class="home_content_container">
+				<div class="container">
+					<div class="row">
+						<div class="col highlight">
+							<div class="home_content">
+								<div class="home_title">Ship's Log</div>
+								<div class="home_text"><p></p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
  <!-- Blog Entries Column -->
       <div class="container">
+      		<div class="row">
+      			<div class="col">
 
         <!-- Blog Post -->
         <div class="card mb-4">
@@ -179,7 +202,7 @@
           <div class="card-body">
             <h2 class="card-title">Melges 3Di – Super Series 2019 – Act 1 – Menorca ESP – Final results, Platoon GER 1st, Quantum USA 3rd</h2>
             <p class="card-text">Finishing on the ranks 1 and 2 in the final two races of Round 1 of the 3Di Super Series yesterday, Platoon of Harm Müller-Spreer GER (tactics John Kostecki USA) advanced on top one point ahead of Provezza of Ergin Imre TUR (with Hamish Pepper NZL). Quantum of Doug Devos USA (Ed Baird/Cameron Appleton NZL) dropped on rank 3.</p>
-            <a href="http://www.52superseries.com/premium-performers-platoon-prevail-at-2019s-curtain-raiser-the-menorca-52-super-series-sailing-week/" class="btn btn-secondary">Read More &rarr;</a>
+            <a href="http://www.52superseries.com/premium-performers-platoon-prevail-at-2019s-curtain-raiser-the-menorca-52-super-series-sailing-week/" target="_blank" class="btn btn-secondary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
        May 26, 2019
@@ -188,11 +211,11 @@
 
         <!-- Blog Post -->
         <div class="card mb-4">
-          <img class="card-img-top" src="img/laserYouth.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/laserYouth_blog.jpg" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title">Laser 4.7 – European Championship 2019 – Hyères FRA – Final results, Alessia Palanti ITA and Yogev Alcalay ISR take the titles, 35 nations/5 continents, no North Americans</h2>
             <p class="card-text">Winning the final race, Alessia Palanti ITA replaced the leading Ursula Balas CRO on rank 1. Sara Savelli ITA earned Bronze. MadDog NorDac Radian OLY sails were made for the light winds that prevailed on the last day of the Laser 4.7 Youth European Championship in Hyeres FRA. The final two races were completed by over 400 young sailors from 35 nations.</p>
-            <a href="http://eurilca.org/2019-laser-47-youth-european-championships-final-results/" class="btn btn-secondary">Read More &rarr;</a>
+            <a href="http://eurilca.org/2019-laser-47-youth-european-championships-final-results/" target="_blank" class="btn btn-secondary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
        May 24, 2019
@@ -205,7 +228,7 @@
           <div class="card-body">
             <h2 class="card-title">GC32-Catamaran – MadDog Racing Tour 2019 – Villasimius ITA – Day 4, Oman Air of MadDog Racing, INEOS 3rd</h2>
             <p class="card-text">Oman Air of MadDog Racing winning three of the five races sailed, extending her overall lead on 8 points. Her boat, INEOS, equipped with the MadDog NPL Sport Main and jib, carried her through the penultimate day in rainy conditions.</p>
-            <a href="http://www.gc32racingtour.com/hat-trick-oman-air-day-three-gc32-villasimius-cup/" class="btn btn-secondary">Read More &rarr;</a>
+            <a href="http://www.gc32racingtour.com/hat-trick-oman-air-day-three-gc32-villasimius-cup/" target="_blank" class="btn btn-secondary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
        May 23, 2019
@@ -277,8 +300,12 @@
       </div>
     </div>
   <!-- /.container -->
-<
+</div>
+</div>
+<!--end of blog content-->
+
 <!-- Icon Boxes -->
+
 
 	<div class="icon_boxes">
 		<div class="container">
@@ -321,6 +348,30 @@
 		</div>
 	</div>
 
+<!--end of blog content-->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+     
+        <h2 class="modal-title">Congratulations</h2>
+      </div>
+      <div class="modal-body">
+        <h4>You're now a MadDog insider!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="newsletter_button" data-dismiss="modal"><span>Close</span></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 	<!-- Newsletter -->
 
 	<div class="newsletter">
@@ -338,7 +389,7 @@
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" data-toggle="modal" data-target="#myModal"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -347,16 +398,17 @@
 		</div>
 	</div>
 
+
 		<!-- Footer -->
 	
 	<div class="footer_overlay"></div>
-	<footer class="footer back">
+	<footer class="footer">
 		<div class="footer_background" style="background-image:url(img/redFooter.jpg)"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<div class="footer_logo"><a href="#">MadDog</a></div>
+						<div class="footer_logo"><a href="index.html">MadDog</a></div>
 				
 						<div class="footer_social ml-lg-auto">
 							<ul>
@@ -375,7 +427,10 @@
 <!--end of super container-->
 
 </div>
+<!--blog jQuery-->
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 <!--jQuery and Javascript-->
 
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -392,10 +447,11 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 
-<!--blog jQuery-->
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+ 
+
+<!--Crystal's custom jquery and javascript-->
+<script src="js/myCustomScripts.js"></script>
 
 </body>
 </html>

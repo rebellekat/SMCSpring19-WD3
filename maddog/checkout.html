@@ -7,6 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/checkout.css">
 <link rel="stylesheet" type="text/css" href="styles/checkout_responsive.css">
 
@@ -26,13 +33,13 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><a href="#">MadDog Sails</a></div>
+							<div class="logo"><a href="index.html">MadDog Sails</a></div>
 							<nav class="main_nav">
 								<ul>
 									<li>
 										<a href="index.html">Home</a>
 									<li class="hassubs">
-										<a href="offshore.html">Categories</a>
+										<a href="#">Categories</a>
 										<ul>
 											<li><a href="offshore.html">Offshore</a></li>
 											<li><a href="threedi.html">3Di Sails</a></li>
@@ -40,12 +47,13 @@
 										</ul>
 									</li>
 									<li><a href="blog.html">Blog</a></li>
+									<li><a href="sailcare.html">F.A.Q.</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="cart.html">
+									<a href="#">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -116,7 +124,7 @@
 
 		<!-- Menu -->
 
-	<div class="menu menu_mm trans_300">
+	<div class="menu menu_mm trans_300 myMenu">
 		<div class="menu_container menu_mm">
 			<div class="page_menu_content">
 							
@@ -125,23 +133,20 @@
 						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
 					</form>
 				</div>
-				<ul class="page_menu_nav menu_mm">
-					<li class="page_menu_item has-children menu_mm">
-						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-					</li>
-					<li class="page_menu_item has-children menu_mm">
-						<a href="offshore.html">Categories<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-											<li><a href="offshore.html">Offshore</a></li>
-											<li><a href="threedi.html">3Di Sails</a></li>
-											<li><a href="npcradian.html">Racing</a></li>
-						</ul>
-					</li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Contact</a></li>
+				<ul class="page_menu_item menu_mm">
+						<li class="page_menu_item menu_mm">
+							<a href="index.html">Home</a></li>
+						<li class="page_menu_item has-children menu_mm">
+							<a href="#">Categories<i class="fa fa-angle-down"></i></a>
+								<ul class="page_menu_selection menu_mm">
+											<li class="page_menu_item has-children menu_mm"><a href="offshore.html">Offshore</a></li>
+											<li class="page_menu_item has-children menu_mm"><a href="threedi.html">3Di Sails</a></li>
+											<li class="page_menu_item has-children menu_mm"><a href="npcradian.html">Racing</a></li>
+								</ul>
+						</li>
+							<li class="page_menu_item menu_mm"><a href="blog.html">Blog</a></li>
+							<li class="page_menu_item menu_mm"><a href="sailcare.html">F.A.Q.</a></li>
+							<li class="page_menu_item menu_mm"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -162,16 +167,16 @@
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(images/cart.jpg)"></div>
+			<div class="home_background" style="background-image:url(img/bliss_edited.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
-						<div class="col">
+						<div class="col highlight">
 							<div class="home_content">
 								<div class="breadcrumbs">
 									<ul>
 										<li><a href="index.html">Home</a></li>
-										<li><a href="cart.html">Shopping Cart</a></li>
+										<li><a href="#">Shopping Cart</a></li>
 										<li>Checkout</li>
 									</ul>
 								</div>
@@ -237,13 +242,7 @@
 								<div>
 									<!-- City-->
 									<label for="checkout_city">City*</label>
-									<select name="checkout_city" id="checkout_city" class="dropdown_item_select checkout_input" require="required">
-										<option></option>
-										<option>Los Angeles</option>
-										<option>Los Angeles</option>
-										<option>Los Angeles</option>
-										<option>Los Angeles</option>
-									</select>
+									<input type="text" id="checkout_city" class="checkout_input" required="required">
 								</div>
 								<div>
 									<!-- State -->
@@ -311,23 +310,6 @@
 									<label for="checkout_email">Email Address*</label>
 									<input type="phone" id="checkout_email" class="checkout_input" required="required">
 								</div>
-								<div class="checkout_extra">
-									<div>
-										<input type="checkbox" id="checkbox_terms" name="regular_checkbox" class="regular_checkbox" checked="checked">
-										<label for="checkbox_terms"><img src="images/check.png" alt=""></label>
-										<span class="checkbox_title">Terms and conditions</span>
-									</div>
-									<div>
-										<input type="checkbox" id="checkbox_account" name="regular_checkbox" class="regular_checkbox">
-										<label for="checkbox_account"><img src="images/check.png" alt=""></label>
-										<span class="checkbox_title">Create an account</span>
-									</div>
-									<div>
-										<input type="checkbox" id="checkbox_newsletter" name="regular_checkbox" class="regular_checkbox">
-										<label for="checkbox_newsletter"><img src="images/check.png" alt=""></label>
-										<span class="checkbox_title">Subscribe to our newsletter</span>
-									</div>
-								</div>
 							</form>
 						</div>
 					</div>
@@ -393,6 +375,27 @@
 		</div>
 	</div>
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+     
+        <h2 class="modal-title">Congratulations</h2>
+      </div>
+      <div class="modal-body">
+        <h4>You're now a MadDog insider!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="newsletter_button" data-dismiss="modal"><span>Close</span></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- Newsletter -->
 
 	<div class="newsletter">
@@ -410,7 +413,7 @@
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" data-toggle="modal" data-target="#myModal"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -428,7 +431,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<div class="footer_logo"><a href="#">MadDog</a></div>
+						<div class="footer_logo"><a href="index.html">MadDog</a></div>
 				
 						<div class="footer_social ml-lg-auto">
 							<ul>
@@ -449,6 +452,8 @@
 </div>
 
 <!--jQuery and Javascript-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
@@ -458,9 +463,15 @@
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/checkout.js"></script>
+<script src="js/custom.js"></script>
+
+<!--Crystal's custom jquery and javascript-->
+<script src="js/myCustomScripts.js"></script>
 
 </body>
 </html>

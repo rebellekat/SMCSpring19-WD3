@@ -5,6 +5,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/path/to/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -14,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/product.css">
 <link rel="stylesheet" type="text/css" href="styles/product_responsive.css">
+
 
 <!--my style sheet-->
 <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
@@ -31,26 +35,27 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><a href="#">MadDog Sails</a></div>
+							<div class="logo"><a href="index.html">MadDog Sails</a></div>
 							<nav class="main_nav">
 								<ul>
 									<li>
 										<a href="index.html">Home</a>
 									<li class="hassubs">
-										<a href="offshore.html">Categories</a>
+										<a href="#">Categories</a>
 										<ul>
-											<li><a href="offshore.html">Offshore</a></li>
+											<li><a href="#">Offshore</a></li>
 											<li><a href="threedi.html">3Di Sails</a></li>
 											<li><a href="racing.html">Racing</a></li>
 										</ul>
 									</li>
 									<li><a href="blog.html">Blog</a></li>
+									<li><a href="sailcare.html">F.A.Q.</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="cart.html">
+									<a href="checkout.html">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -61,9 +66,10 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-										<div>Cart<span>(0)</span></div>
+										<div>Cart<span id="cartUpdate">(0)</span></div>
 									</a>
 								</div>
+							</div>
 								<div class="search">
 									<div class="search_icon">
 										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -121,7 +127,7 @@
 
 		<!-- Menu -->
 
-	<div class="menu menu_mm trans_300">
+<div class="menu menu_mm trans_300 myMenu">
 		<div class="menu_container menu_mm">
 			<div class="page_menu_content">
 							
@@ -130,23 +136,20 @@
 						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
 					</form>
 				</div>
-				<ul class="page_menu_nav menu_mm">
-					<li class="page_menu_item has-children menu_mm">
-						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-					</li>
-					<li class="page_menu_item has-children menu_mm">
-						<a href="offshore.html">Categories<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-											<li><a href="offshore.html">Offshore</a></li>
-											<li><a href="threedi.html">3Di Sails</a></li>
-											<li><a href="npcradian.html">Racing</a></li>
-						</ul>
-					</li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Contact</a></li>
+				<ul class="page_menu_item menu_mm">
+						<li class="page_menu_item menu_mm">
+							<a href="index.html">Home</a></li>
+						<li class="page_menu_item has-children menu_mm">
+							<a href="#">Categories<i class="fa fa-angle-down"></i></a>
+								<ul class="page_menu_selection menu_mm">
+											<li class="page_menu_item has-children menu_mm"><a href="#">Offshore</a></li>
+											<li class="page_menu_item has-children menu_mm"><a href="threedi.html">3Di Sails</a></li>
+											<li class="page_menu_item has-children menu_mm"><a href="npcradian.html">Racing</a></li>
+								</ul>
+						</li>
+							<li class="page_menu_item menu_mm"><a href="blog.html">Blog</a></li>
+							<li class="page_menu_item menu_mm"><a href="sailcare.html">F.A.Q.</a></li>
+							<li class="page_menu_item menu_mm"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -168,11 +171,11 @@
 
 		<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(img/splash.jpg)"></div>
-			<div class="home_content_container highlight">
+			<div class="home_background" style="background-image:url(img/offshoreC.jpg)"></div>
+			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
-						<div class="col">
+						<div class="col highlight">
 							<div class="home_content">
 								<div class="home_title">Offshore Racing<span>.</span></div>
 								<div class="home_text"><p></p></div>
@@ -193,12 +196,12 @@
 				<!-- Product Image -->
 				<div class="col-lg-6">
 					<div class="details_image">
-						<div class="details_image_large"><img src="img/offshoreA.jpg" alt=""><div class="product_extra product_new"><a href="categories.html">New</a></div></div>
+						<div class="details_image_large"><img src="img/shoreA.jpg" alt=""></div>
 						<div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
-							<div class="details_image_thumbnail active" data-image="img/offshoreA.jpg"><img src="img/offshoreA.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="img/offshoreF.jpeg"><img src="img/offshoreF.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="img/unaje.jpg"><img src="img/unaje.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="img/americasCup.jpg"><img src="img/americasCup.jpg" alt=""></div>
+							<div class="details_image_thumbnail active" data-image="img/shoreA.jpg"><img src="img/shoreA.jpg" alt=""></div>
+							<div class="details_image_thumbnail" data-image="img/shoreB.jpg"><img src="img/shoreB.jpg" alt=""></div>
+							<div class="details_image_thumbnail" data-image="img/shoreC.jpg"><img src="img/shoreC.jpg" alt=""></div>
+							<div class="details_image_thumbnail" data-image="img/shoreD.jpg"><img src="img/shoreD.jpg" alt=""></div>
 						</div>
 					</div>
 				</div>
@@ -221,7 +224,7 @@
 						</div>
 
 						<!-- Product Quantity -->
-						<div class="product_quantity_container">
+							<div class="product_quantity_container">
 							<div class="product_quantity clearfix">
 								<span>Qty</span>
 								<input id="quantity_input" type="text" pattern="[0-9]*" value="1">
@@ -230,7 +233,7 @@
 									<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
 								</div>
 							</div>
-							<div class="button cart_button"><a href="#">Order Sail</a></div>
+						<div class="my-cart-btn addcart add-to-cart button cart_button" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1"><a class="shopping-cart" href="#"></i>Order Sail</a></div>
 						</div>
 
 						<!-- Share -->
@@ -251,7 +254,7 @@
 				<div class="col">
 					<div class="description_title_container">
 						<div class="description_title">Description</div>
-						<div class="reviews_title"><a href="#">Reviews <span>(1)</span></a></div>
+						<div class="reviews_title"><a href="#">Reviews <span>(124)</span></a></div>
 					</div>
 					<div class="description_text">
 						<p>NPL SPORT sails feature high-performance MadDog Xi Race laminates, which are produced using the world’s most advanced sailcloth laminator. The result is exceptional laminate bonding with minimum adhesive. Our integrated eXact™ process allows on-the-fly application of variable-angle x-scrims that are unique to the industry. eXact x-scrims eliminate the parasitic bulk of carrier yarns used in pre-made scrims.</p>
@@ -305,6 +308,27 @@
 		</div>
 	</div>
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+     
+        <h2 class="modal-title">Congratulations</h2>
+      </div>
+      <div class="modal-body">
+        <h4>You're now a MadDog insider!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="newsletter_button" data-dismiss="modal"><span>Close</span></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- Newsletter -->
 
 	<div class="newsletter">
@@ -322,7 +346,7 @@
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" data-toggle="modal" data-target="#myModal"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -330,6 +354,8 @@
 			</div>
 		</div>
 	</div>
+
+
 
 	<!-- Footer -->
 	
@@ -340,7 +366,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<div class="footer_logo"><a href="#">MadDog</a></div>
+						<div class="footer_logo"><a href="index.html">MadDog</a></div>
 				
 						<div class="footer_social ml-lg-auto">
 							<ul>
@@ -360,8 +386,14 @@
 
 </div>
 
-<!--jQuery and Javascript-->
+<!--shopping cart javaacript-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+<script type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+<!--jQuery and Javascript-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
@@ -376,6 +408,15 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/product.js"></script>
+
+
+<script src="/path/to/jquery.min.js"></script>
+<script src="/path/to/bootstrap.min.js"></script>
+
+
+<!--Crystal's custom jquery and javascript-->
+<script src="js/myCustomScripts.js"></script>
+
 
 </body>
 </html>

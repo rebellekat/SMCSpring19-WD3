@@ -5,6 +5,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -13,10 +15,14 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
+
 <!--my style sheet-->
 <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
 
+ 
+
 </head>
+
 <body>
 
 <div class="super_container">
@@ -33,9 +39,9 @@
 							<nav class="main_nav">
 								<ul>
 									<li>
-										<a href="index.html">Home</a>
+										<a href="#">Home</a>
 									<li class="hassubs">
-										<a href="offshore">Categories</a>
+										<a href="#">Categories</a>
 										<ul>
 											<li><a href="offshore.html">Offshore</a></li>
 											<li><a href="threedi.html">3Di Sails</a></li>
@@ -43,12 +49,13 @@
 										</ul>
 									</li>
 									<li><a href="blog.html">Blog</a></li>
+									<li><a href="sailcare.html">F.A.Q.</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="cart.html">
+									<a href="checkout.html">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -59,7 +66,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-										<div>Cart <span>(0)</span></div>
+										<div>Cart<span>(0)</span></div>
 									</a>
 								</div>
 								<div class="search">
@@ -119,7 +126,7 @@
 
 		<!-- Menu -->
 
-	<div class="menu menu_mm trans_300">
+	<div class="menu menu_mm trans_300 myMenu">
 		<div class="menu_container menu_mm">
 			<div class="page_menu_content">
 							
@@ -128,23 +135,20 @@
 						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
 					</form>
 				</div>
-				<ul class="page_menu_nav menu_mm">
-					<li class="page_menu_item has-children menu_mm">
-						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-					</li>
-					<li class="page_menu_item has-children menu_mm">
-						<a href="offshore.html">Categories<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-											<li><a href="offshore.html">Offshore</a></li>
-											<li><a href="threedi.html">3Di Sails</a></li>
-											<li><a href="npcradian.html">Racing</a></li>
-						</ul>
-					</li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Contact</a></li>
+				<ul class="page_menu_item menu_mm">
+						<li class="page_menu_item menu_mm">
+							<a href="#">Home</a></li>
+						<li class="page_menu_item has-children menu_mm">
+							<a  href="#">Categories<i class="fa fa-angle-down"></i></a>
+								<ul class="page_menu_selection menu_mm">
+											<li class="page_menu_item menu_mm"><a href="offshore.html">Offshore</a></li>
+											<li class="page_menu_item menu_mm"><a href="threedi.html">3Di Sails</a></li>
+											<li class="page_menu_item menu_mm"><a href="npcradian.html">Racing</a></li>
+								</ul>
+						</li>
+							<li class="page_menu_item menu_mm"><a href="blog.html">Blog</a></li>
+							<li class="page_menu_item menu_mm"><a href="sailcare.html">F.A.Q.</a></li>
+							<li class="page_menu_item menu_mm"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -176,8 +180,8 @@
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
-								<div class="col">
-									<div class="home_slider_content "  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+								<div class="col highlight_home">
+									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Helix</div>
 										<div class="button button_light home_button"><a href="threedi.html">Shop Now</a></div>
 									</div>
@@ -193,7 +197,7 @@
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
-								<div class="col">
+								<div class="col highlight_home">
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Offshore</div>
 										<div class="button button_light home_button"><a href="offshore.html">Shop Now</a></div>
@@ -206,11 +210,11 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(img/hobie.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(img/boss_4_edited.jpg)"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
-								<div class="col">
+								<div class="col highlight_home">
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Racing</div>
 								
@@ -250,13 +254,9 @@
 	<div class="avds">
 		<div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
 			<div class="avds_small">
-				<div class="avds_background" style="background-image:url(img/multigraysails.jpg)"></div>
+				<div class="avds_background" style="background-image:url(img/boss.jpg)"></div>
 				<div class="avds_small_inner">
-					<div class="avds_discount_container">
-						<img src="images/discount.png" alt="">
-						<div>
-						</div>
-					</div>
+					
 					<div class="avds_small_content">
 						<div class="avds_title">NPc Radian</div>
 						<div class="avds_link"><a href="racing.html">See More</a></div>
@@ -264,7 +264,7 @@
 				</div>
 			</div>
 			<div class="avds_large">
-				<div class="avds_background" style="background-image:url(img/nordac.jpg)"></div>
+				<div class="avds_background" style="background-image:url(img/boss_3.jpg)"></div>
 				<div class="avds_large_container">
 					<div class="avds_large_content">
 						<div class="avds_title">3Di Nordac Sails</div>
@@ -320,10 +320,29 @@
 			</div>
 		</div>
 	</div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+     
+        <h2 class="modal-title">Congratulations</h2>
+      </div>
+      <div class="modal-body">
+        <h4>You're now a MadDog insider!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="newsletter_button" data-dismiss="modal"><span>Close</span></button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!-- Newsletter -->
-
-	<div class="newsletter">
+<div class="newsletter">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -338,7 +357,7 @@
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200" data-toggle="modal" data-target="#myModal"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -346,6 +365,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<!-- Footer -->
 	
@@ -356,7 +376,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<div class="footer_logo"><a href="#">MadDog</a></div>
+						<div class="footer_logo"><a href="index.html">MadDog</a></div>
 				
 						<div class="footer_social ml-lg-auto">
 							<ul>
@@ -377,6 +397,8 @@
 </div>
 
 <!--jQuery and Javascript-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
@@ -391,6 +413,10 @@
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
+
+<!--Crystal's custom jquery and javascript-->
+<script src="js/myCustomScripts.js"></script>
+
 
 </body>
 </html>

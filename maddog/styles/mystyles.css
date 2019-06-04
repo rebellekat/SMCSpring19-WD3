@@ -71,3 +71,27 @@ a.dark {
 	padding-top:0;
 }
 
+label{
+	 font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+div.contact{
+	padding-bottom: 30px;
+}
+.icon_boxes{
+	padding-bottom: 60px;
+}
+div.newsletter{
+	padding-bottom: 0;
+}
+.order_text{
+	padding-top: 0px;
+	}
+
+.down{
+	margin-bottom: 10px;
+}

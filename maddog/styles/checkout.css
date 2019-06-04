@@ -884,15 +884,15 @@ section
 .checkout
 {
 	width: 100%;
-	padding-top: 98px;
-	padding-bottom: 99px;
+	padding-top: 70px;
+	padding-bottom: 970x;
 	background: #FFFFFF;
 	z-index: 2;
 }
 .checkout_section
 {
 	width: 100%;
-	padding-top: 44px;
+	padding-top: 0px;
 }
 .billing
 {
@@ -903,6 +903,7 @@ section
 	font-size: 24px;
 	font-weight: 600;
 	color: #1b1b1b;
+	padding-top:20px;
 }
 .section_subtitle
 {
@@ -1034,7 +1035,7 @@ section
 }
 .order_list_bar
 {
-	margin-bottom: 59px;
+	margin-bottom: 33px;
 }
 .order_list_title,
 .order_list_value
@@ -1045,11 +1046,12 @@ section
 }
 .order_list li:not(:last-child)
 {
-	margin-bottom: 53px;
+	margin-bottom: 33px;
 }
 .payment_options
 {
 	margin-top: 80px;
+	padding-bottom:10px;
 }
 .payment_option
 {
@@ -1106,7 +1108,7 @@ section
 	font-weight: 400;
 	font-style: italic;
 	color: #6c6a74;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 .order_button
 {

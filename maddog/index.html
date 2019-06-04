@@ -6,6 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--bootstrap CSS-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--sublime stylesheets-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -193,7 +198,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(img/blitzing.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(img/blitzing.jpg)" alt="sailboat"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -210,7 +215,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(img/boss_4_edited.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(img/boss_4_edited.jpg)" alt="sailboat"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -254,7 +259,7 @@
 	<div class="avds">
 		<div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
 			<div class="avds_small">
-				<div class="avds_background" style="background-image:url(img/boss.jpg)"></div>
+				<div class="avds_background" style="background-image:url(img/boss.jpg)" alt="sailboat"></div>
 				<div class="avds_small_inner">
 					
 					<div class="avds_small_content">
@@ -264,7 +269,7 @@
 				</div>
 			</div>
 			<div class="avds_large">
-				<div class="avds_background" style="background-image:url(img/boss_3.jpg)"></div>
+				<div class="avds_background" style="background-image:url(img/boss_3.jpg)" alt="sailboat"></div>
 				<div class="avds_large_container">
 					<div class="avds_large_content">
 						<div class="avds_title">3Di Nordac Sails</div>
@@ -287,7 +292,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
-						<div class="icon_box_image"><img src="img/icon_1.svg" alt=""></div>
+						<div class="icon_box_image"><img src="img/icon_1.svg" alt="shipping"></div>
 						<div class="icon_box_title">Free Shipping Worldwide</div>
 						<div class="icon_box_text">
 							<p>Free shipping on orders of $50 or more - worldwide!</p>
@@ -298,7 +303,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
-						<div class="icon_box_image"><img src="img/icon_2.svg" alt=""></div>
+						<div class="icon_box_image"><img src="img/icon_2.svg" alt="returns"></div>
 						<div class="icon_box_title">Free Returns</div>
 						<div class="icon_box_text">
 							<p>All of our products are backed by the MadDog Guarantee. If you're unhappy with your purchase, just drop us a line and we'll email you a free pre-paid shipping label.</p>
@@ -309,7 +314,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
-						<div class="icon_box_image"><img src="img/icon_3.svg" alt=""></div>
+						<div class="icon_box_image"><img src="img/icon_3.svg" alt="support"></div>
 						<div class="icon_box_title">24/7 Support</div>
 						<div class="icon_box_text">
 							<p>Our team of MadDog enthusiasts are on call 24/7.</p>
@@ -357,7 +362,7 @@
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200" data-toggle="modal" data-target="#myModal"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200 btn_success" data-toggle="modal" data-target="#myModal" type="submit" id="submit"><span>Subscribe</span></button>
 							</form>
 						</div>
 					</div>
@@ -371,7 +376,7 @@
 	
 	<div class="footer_overlay"></div>
 	<footer class="footer">
-		<div class="footer_background" style="background-image:url(img/redFooter.jpg)"></div>
+		<div class="footer_background" style="background-image:url(img/redFooter.jpg)" alt="footer"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -396,13 +401,17 @@
 
 </div>
 
-<!--jQuery and Javascript-->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<!--jQuery and Javascript-->
+
+<!--sublime jQuery and Javascript-->
+
 <script src="plugins/greensock/TweenMax.min.js"></script>
 <script src="plugins/greensock/TimelineMax.min.js"></script>
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
@@ -416,7 +425,6 @@
 
 <!--Crystal's custom jquery and javascript-->
 <script src="js/myCustomScripts.js"></script>
-
 
 </body>
 </html>

@@ -19,8 +19,17 @@ $(document).ready(function(){
            $(".cartUpdate").text(currentItems);
        });
 
+//3rd attempt at cart
+   $(document).ready(function() {
+  var count=0
+       $("#counter").click(function() {
+    count++;
+    $("#update").html("My current count is: "+count);
+});
+    });
+
 //checkout form validation
- (function() {
+ $(function() {
         'use strict';
         window.addEventListener('load', function() {
           var forms = document.getElementsByClassName('needs-validation');
@@ -36,5 +45,11 @@ $(document).ready(function(){
           });
         }, false);
       })();
-  });
-      
+ 
+ $(document).ready(function() {
+  var count=0
+  $('#counter').click(function() {
+    $('.cartUpdate').html(function(i, val) { return val*1+1 });
+    Materialize.toast('You have clicked me!', 2000)
+});
+   });
